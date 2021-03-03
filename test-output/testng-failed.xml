@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Dan Tests for Web Services]">
+  <parameter name="InputDataFilePath" value="data/IssuesToSolve_data-Dan/Dan_DataForJSONFiles_CalcFactor.xlsx"/>
+  <parameter name="ServicesDataSheet" value="CalcFactor_GET"/>
+  <parameter name="ServicesDataFilePath" value="data/IssuesToSolve_data-Dan/Dan_DataForServices_CalcFactor.xlsx"/>
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="RunAgainst" value="DIT1"/>
+  <parameter name="mailList" value="rajashekhara.hotur@adp.com"/>
+  <parameter name="Client" value=""/>
+  <parameter name="version" value=""/>
+  <parameter name="Tags" value="CALCFACTOR_ADD"/>
+  <parameter name="platform" value="WINDOWS"/>
+  <parameter name="FeatureName" value="WIP/IssuesToSolve-Feature-Dan/F8864_DeductionsCalcFactorGET.feature"/>
+  <test name="US378794_SpecialEffects.feature(failed)">
+    <parameter name="InputDataFilePath" value="data/IssuesToSolve_data-Dan/Dan_DataForJSONFiles_CalcFactor.xlsx"/>
+    <parameter name="ServicesDataSheet" value="CalcFactor_GET"/>
+    <parameter name="ServicesDataFilePath" value="data/IssuesToSolve_data-Dan/Dan_DataForServices_CalcFactor.xlsx"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="RunAgainst" value="DIT1"/>
+    <parameter name="mailList" value="rajashekhara.hotur@adp.com"/>
+    <parameter name="Client" value=""/>
+    <parameter name="version" value=""/>
+    <parameter name="Tags" value="CALCFACTOR_ADD"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="FeatureName" value="WIP/IssuesToSolve-Feature-Dan/F8864_DeductionsCalcFactorGET.feature"/>
+    <classes>
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest">
+        <methods>
+          <include name="runCukes" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest -->
+    </classes>
+  </test> <!-- US378794_SpecialEffects.feature(failed) -->
+</suite> <!-- Failed suite [Dan Tests for Web Services] -->

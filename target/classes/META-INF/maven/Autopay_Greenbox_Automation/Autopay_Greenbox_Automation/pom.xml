@@ -1,0 +1,422 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Autopay_Greenbox_Automation</groupId>
+	<artifactId>Autopay_Greenbox_Automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Autopay_Greenbox_Automation</name>
+<!-- 	<url>http://maven.apache.org</url>
+ -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+        	<repository>
+			<id>Nexus</id>
+			<name>*</name>
+			<url>http://repo-product.workscape.net/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+        
+        
+		<!-- <repository>
+			<id>ALL</id>
+			<url>http://cdlvdiw701405:8082/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository> -->
+	
+	</repositories>
+	<dependencies>
+	      
+		<dependency>
+		    <groupId>net.javacrumbs.json-unit</groupId>
+		    <artifactId>json-unit</artifactId>
+		    <version>1.11.0</version>
+		    <scope>test</scope>
+		</dependency>
+
+		<dependency>
+            <groupId>com.adp</groupId>
+            <artifactId>pojo_events</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <!-- <scope>system</scope>
+			<systemPath>${basedir}\CustomizedJar\pojo_events-0.0.1-SNAPSHOT.jar</systemPath> -->
+          </dependency> 
+     
+		<dependency>
+		    <groupId>net.javacrumbs.json-unit</groupId>
+		    <artifactId>json-unit-fluent</artifactId>
+		    <version>1.11.0</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.11.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>jcs</groupId>
+			<artifactId>jcs</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+
+<!-- Cucumber jars -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-html</artifactId>
+			<version>0.2.3</version>
+		</dependency>
+
+
+         <dependency> 
+             <groupId>Cucumber</groupId>
+             <artifactId>Cucumber</artifactId>
+             <version>1.0</version>
+            <!--  <scope>system</scope>
+             <systemPath>C:/GIT/automation-framework/Autopay/CustomizedJar/cucumber.jar</systemPath> -->
+         </dependency> 
+
+<!-- <dependency> -->
+<!-- 			<groupId>info.cukes</groupId> -->
+<!-- 			<artifactId>cucumber-jvm-deps</artifactId> -->
+<!-- 			<version>1.0.5</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>net.sourceforge.cobertura</groupId> -->
+<!-- 			<artifactId>cobertura</artifactId> -->
+<!-- 			<version>2.1.1</version> -->
+<!-- 		</dependency> -->
+
+<!-- <dependency> -->
+<!--     <groupId>cobertura</groupId> -->
+<!--     <artifactId>cobertura</artifactId> -->
+<!--     <version>1.8</version> -->
+<!-- </dependency> -->
+		
+         <dependency>
+             <groupId>info.cukes</groupId>
+             <artifactId>cucumber-testng</artifactId>
+             <version>1.2.0</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>junit</groupId>
+                     <artifactId>junit</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <artifactId>cucumber-core</artifactId>
+                     <groupId>info.cukes</groupId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.4</version>
+			<scope>test</scope>
+		</dependency>
+		
+	
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>2.12.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.27</version>
+		</dependency>
+
+<!-- 		Raj Added this new dependency in place old -->
+		<dependency>
+		    <groupId>org.picocontainer</groupId>
+		    <artifactId>picocontainer</artifactId>
+		    <version>2.14.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.oracle.jdbc</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20140107</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.12.5</version>
+		</dependency>
+
+		<dependency> 
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>0.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-ant-tasks</artifactId>
+			<version>2.1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-api</artifactId>
+			<version>2.45.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.11-beta3</version>
+		</dependency>
+		        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.6.3</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.6.3</version>
+            <type>jar</type>
+        </dependency>
+		
+		
+	<!-- 	<dependency>
+		    <groupId>javax.sql</groupId>
+		    <artifactId>jdbc-stdext</artifactId>
+		    <version>2.0</version>
+		</dependency> -->
+		<dependency>
+		    <groupId>javax.transaction</groupId>
+		    <artifactId>jta</artifactId>
+		    <version>1.1</version>
+		</dependency>
+		
+		
+<!-- 		<dependency>   -->
+<!--           <groupId>com.sun</groupId>  -->
+<!--            <artifactId>tools</artifactId> -->
+<!-- 	        <version>1.4.2</version> -->
+<!-- 	        <scope>system</scope> -->
+<!-- 	        <systemPath>C:/GIT/automation-framework/Autopay/CustomizedJar/tools.jar</systemPath> -->
+<!--         </dependency> -->
+        
+	</dependencies>
+
+		
+        
+	<profiles>
+<!-- 		<profile> -->
+<!-- 			<id>GenDeductions</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.16</version> -->
+<!-- 						<configuration> -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src\test\resources\XMLfiles\UserXMLFiles\SmokeTest_General_Deductions.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+
+<!-- 		<profile> -->
+<!-- 			<id>SpecialEffects</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.16</version> -->
+<!-- 						<configuration> -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src\test\resources\XMLfiles\UserXMLFiles\SmokeTest_SpecialEffects.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+
+		
+<!-- 		<profile> -->
+<!-- 			<id>VantageICT_IAT_POD1</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.16</version> -->
+<!-- 						<configuration> -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src/test/java/BVTnICTExecutions/ICT_VANTAGE_IAT_POD1.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+		
+<!-- 		<profile> -->
+<!-- 			<id>BVT_HWSE_DIT_WEBSERVICES</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.16</version> -->
+<!-- 						<configuration> -->
+<!-- 						<forkMode>pertest</forkMode>  -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src/test/java/UserXMLFiles/Team.Zambezi/BVT_HWSE_DIT_WEBSERVICES.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+
+	</profiles>
+
+  <build>
+ 
+    
+        <!-- Source directory configuration -->
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <!-- Following plugin executes the testng tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.16</version>
+                <configuration>
+                    <!-- Suite testng xml file to consider for test execution -->
+                    <suiteXmlFiles>
+<!--                         <suiteXmlFile>src/test/resources/XMLFiles/UserXMLFiles/GreenBoxSmokeTestExecutionSuite.xml</suiteXmlFile> -->
+						<suiteXmlFile>src/test/resources/XMLfiles/SmokeTests/DailySmokeSuite.xml</suiteXmlFile>
+                     
+                     
+                     </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <!-- Compiler plugin configures the java version to be usedfor compiling 
+                the code -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+
+	
+	
+	
+</project>

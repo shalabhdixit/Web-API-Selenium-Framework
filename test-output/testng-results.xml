@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Evelyn Tests for Web Services " duration-ms="10214" started-at="2017-02-24T13:47:48Z" finished-at="2017-02-24T13:47:58Z">
+    <groups>
+      <group name="examples-testng">
+        <method signature="RunCukesByCompositionTest.runCukes(org.testng.ITestContext)[pri:0, instance:com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest@3e7f2b47]" name="runCukes" class="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+      </group> <!-- examples-testng -->
+    </groups>
+    <test name="US606179_US_Earnings_Accumulator_APS.feature" duration-ms="10214" started-at="2017-02-24T13:47:48Z" finished-at="2017-02-24T13:47:58Z">
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest@3e7f2b47]" name="beforeSuite" is-config="true" duration-ms="602" started-at="2017-02-24T08:47:47Z" finished-at="2017-02-24T08:47:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5295c398]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest@3e7f2b47]" name="beforeTest" is-config="true" duration-ms="155" started-at="2017-02-24T08:47:48Z" finished-at="2017-02-24T08:47:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5295c398]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WIP/US606179_US_Earnings_Accumulator_APS.feature]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DIT1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[WINDOWS]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="runCukes(org.testng.ITestContext)[pri:0, instance:com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest@3e7f2b47]" name="runCukes" duration-ms="10014" started-at="2017-02-24T08:47:48Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2017-02-24T08:47:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5295c398]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCukes -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest@3e7f2b47]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-02-24T08:47:58Z" finished-at="2017-02-24T08:47:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5295c398]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest@3e7f2b47]" name="afterSuite" is-config="true" duration-ms="24917" started-at="2017-02-24T08:47:58Z" finished-at="2017-02-24T08:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest -->
+    </test> <!-- US606179_US_Earnings_Accumulator_APS.feature -->
+  </suite> <!-- Evelyn Tests for Web Services  -->
+</testng-results>

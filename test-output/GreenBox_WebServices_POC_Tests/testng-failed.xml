@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [GreenBox_WebServices_POC_Tests]" parallel="none">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="RunAgainst" value="GREENBOX_DIT2"/>
+  <parameter name="Client" value=""/>
+  <parameter name="version" value=""/>
+  <parameter name="platform" value="WINDOWS"/>
+  <parameter name="FeatureName" value="WIP/GreenBox_POC/US327010_Payroll_Item_Groups.feature"/>
+  <test name="US100698_POC_generaldeduction.feature" preserve-order="false">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="RunAgainst" value="GREENBOX_DIT2"/>
+    <parameter name="Client" value=""/>
+    <parameter name="version" value=""/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="FeatureName" value="WIP/GreenBox_POC/US100698_POC_generaldeduction.feature"/>
+    <classes>
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+    </classes>
+  </test> <!-- US100698_POC_generaldeduction.feature -->
+  <test name="US268070_GeneralDeduction_PayrollAccumulators.feature" preserve-order="false">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="RunAgainst" value="GREENBOX_DIT2"/>
+    <parameter name="Client" value=""/>
+    <parameter name="version" value=""/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="FeatureName" value="WIP/GreenBox_POC/US268070_GeneralDeduction_PayrollAccumulators.feature"/>
+    <classes>
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+    </classes>
+  </test> <!-- US268070_GeneralDeduction_PayrollAccumulators.feature -->
+  <test name="US301313_PayrollProcess_Schedules.feature" preserve-order="false">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="RunAgainst" value="GREENBOX_DIT2"/>
+    <parameter name="Client" value=""/>
+    <parameter name="version" value=""/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="FeatureName" value="WIP/GreenBox_POC/US301313_PayrollProcess_Schedules.feature"/>
+    <classes>
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+    </classes>
+  </test> <!-- US301313_PayrollProcess_Schedules.feature -->
+  <test name="US313478_Memo_Configurations.feature" preserve-order="false">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="RunAgainst" value="GREENBOX_DIT2"/>
+    <parameter name="Client" value=""/>
+    <parameter name="version" value=""/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="FeatureName" value="WIP/GreenBox_POC/US313478_Memo_Configurations.feature"/>
+    <classes>
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+    </classes>
+  </test> <!-- US313478_Memo_Configurations.feature -->
+  <test name="US327010_Payroll_Item_Groups.feature" preserve-order="false">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="RunAgainst" value="GREENBOX_DIT2"/>
+    <parameter name="Client" value=""/>
+    <parameter name="version" value=""/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="FeatureName" value="WIP/GreenBox_POC/US327010_Payroll_Item_Groups.feature"/>
+    <classes>
+      <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+    </classes>
+  </test> <!-- US327010_Payroll_Item_Groups.feature -->
+</suite> <!-- Failed suite [GreenBox_WebServices_POC_Tests] -->

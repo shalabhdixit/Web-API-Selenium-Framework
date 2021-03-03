@@ -1,0 +1,20 @@
+<suite name="Evelyn's Tests for Web Service " parallel="none" thread-count="3">
+
+    <test name="US620005_Canada_Reimbursement_APD.feature" preserve-order="false">
+        <classes>
+            <parameter name="FeatureName" value="WIP/US620005_Canada_Reimbursement_APD.feature"/>
+            <parameter name="RunAgainst" value="DIT1"/>
+            <parameter name="ServicesDataFilePath" value="data/AlphaDawgs/Evelyn_PayrollOutput_DataForServices.xlsx"/>
+            <parameter name="ServicesDataSheet" value="REM-US620005-APD"/>
+            <parameter name="InputDataFilePath" value="data/AlphaDawgs/Evelyn_DataForJSONFiles.xlsx"/>
+            <parameter name="Tags" value="@US620005_GET"/>
+            <parameter name="mailList" value="Deepak.Tripathi@adp.com"/>
+            <parameter name="Client" value=""/>
+            <parameter name="platform" value="WINDOWS"/>
+            <parameter name="browser" value="Firefox"/>
+            <parameter name="version" value=""/>
+            <class name="com.adp.autopay.automation.cucumberRunner.RunCukesByCompositionTest"/>
+        </classes>
+    </test>
+    
+</suite>

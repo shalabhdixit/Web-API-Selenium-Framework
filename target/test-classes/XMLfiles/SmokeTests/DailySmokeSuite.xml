@@ -1,0 +1,15 @@
+<suite name="DailySmokeTestSuite">
+       <suite-files>
+			<!--        GreenWarriors	 -->
+              <suite-file path="src\test\resources\XMLfiles\GreenWarriors\Anthony_SmokeTest_GeneralDeduction.xml"/>
+              <suite-file path="src\test\resources\XMLfiles\GreenWarriors\Anthony_SmokeTest_AccGeneralDeduction.xml"/>
+<!--               <suite-file path="src\test\resources\XMLfiles\GreenWarriors\Anthony_SmokeTest_HoursAndEarnings.xml"/> -->
+			  <suite-file path="src\test\resources\XMLfiles\GreenWarriors\Anthony_SmokeTest_PayrollItemGroups.xml"/>
+			  <suite-file path="src\test\resources\XMLfiles\GreenWarriors\Anthony_SmokeTest_PayollProcessSchedules.xml"/>
+			  <suite-file path="src\test\resources\XMLfiles\GreenWarriors\Anthony_SmokeTest_PayrollReportsGroups.xml"/>
+			<!--        Renegades	 -->
+              <suite-file path="src\test\resources\XMLfiles\Renegades\Dan_SmokeTest_CalcFactor.xml"/>
+			  <suite-file path="src\test\resources\XMLfiles\Renegades\Sandra_SmokeTest_ClientHolidays.xml"/>
+			  <suite-file path="src\test\resources\XMLfiles\Renegades\Sandra_SmokeTest_Memos.xml"/>
+       </suite-files>
+</suite>

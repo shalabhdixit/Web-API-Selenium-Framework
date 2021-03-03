@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.adp:pojo_events:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/adp/pojo_events/0.0.1-SNAPSHOT/pojo_events-0.0.1-20160509.173220-10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/adp/pojo_events/0.0.1-SNAPSHOT/pojo_events-0.0.1-20160509.173220-10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/adp/pojo_events/0.0.1-SNAPSHOT/pojo_events-0.0.1-20160509.173220-10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
